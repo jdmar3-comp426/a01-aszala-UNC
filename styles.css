@@ -5,9 +5,18 @@ html, body {
 	height: 100%;
 }
 
-.section-container {
+.cover {
 	width: 100%;
 	height: 100%;
+}
+
+.vert-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.section-container {
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -26,10 +35,7 @@ html, body {
 	width: 100%;
 }
 
-.section-container .section .section-title {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+.title {
 	font-size: 2.5em;
 	font-family: 'Courier New', monospace;
 }
@@ -46,8 +52,45 @@ html, body {
 	background-color: #f1da09;
 }
 
+.nav-links {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.nav-links .nav-link-container {
+	width: 33%;
+	height: 50px;
+	text-align: center;
+}
+
+.nav-links .nav-link-container a {
+	color: black !important;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.information-container {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.color-title span {
+	text-decoration: underline;
+}
+
+.color-information {
+	margin-top: 20px;
+	font-size: 1.3em;
+	font-family: 'Brush Script MT', cursive;;
+}
+
 @media only screen and (max-width: 600px) {
-	.section-container .section .section-title {
+	.title {
+		font-size: 1.2em;
+	}
+
+	.color-information {
 		font-size: 1em;
 	}
 }
