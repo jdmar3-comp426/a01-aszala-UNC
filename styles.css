@@ -1,0 +1,53 @@
+html, body {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.section-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.section-container .section {
+	width: 33%;
+	height: 100%;
+	border: solid white 1px;
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+	transition: width, 200ms;
+}
+
+.section-container .section:hover {
+	width: 100%;
+}
+
+.section-container .section .section-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2.5em;
+	font-family: 'Courier New', monospace;
+}
+
+#purple {
+	background-color: #b24fe0;
+}
+
+#green {
+	background-color: #17cc54;
+}
+
+#yellow {
+	background-color: #f1da09;
+}
+
+@media only screen and (max-width: 600px) {
+	.section-container .section .section-title {
+		font-size: 1em;
+	}
+}
